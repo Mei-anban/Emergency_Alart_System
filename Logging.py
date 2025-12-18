@@ -30,8 +30,8 @@ def log_alart(name,email,subject,message):
 #update alart triger
 
 def send_email(subject,message):
-    sender_email = "meiyanban70@gmail.com"
-    sender_pass="zdsb jrws ywxx xaqd"
+    sender_email = "XYZ@gmail.com"
+    sender_pass="xxxx xxxx xxxx xxxx"
 
     cursor.execute("SELECT name,email from contects")
     contects = cursor.fetchall()
@@ -62,3 +62,4 @@ def view_alarts():
     cursor.execute("SELECT * FROM alarts")
     for i in cursor.fetchall():
         print(i)
+
