@@ -12,8 +12,8 @@ cursor= conn.cursor()
 
 def send_alart(subject,message):
 
-    sender_email = "meiyanban70@gmail.com"
-    sender_pass = "zdsb jrws ywxx xaqd"
+    sender_email = "XYZ@gmail.com"
+    sender_pass = "xxxx xxxx xxxx xxxx"
 
     cursor.execute("SELECT name,email FROM contects")
     contects = cursor.fetchall()
@@ -36,5 +36,6 @@ def send_alart(subject,message):
 
         except Exception as e:
             print(f"❌ Failed to send to {name}: {e}")
+
 
 
